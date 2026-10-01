@@ -12,7 +12,7 @@ My interests
 
 My favourite food is:
 
-    * Polish and chinese fried dumplings
+    *Polish and chinese fried dumplings
     *Fried Chicken
     *Carvery
     *Seafood
