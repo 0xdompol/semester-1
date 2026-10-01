@@ -3,8 +3,8 @@
 # You are going to write a very simple program:
 
 # Ask a user to enter two numbers (one per input)
-num1 = input("enter num 1: ")
-num2 = input("enter num 2: ")
+num1 = int(input("enter num 1: "))
+num2 = int(input("enter num 2: "))
 # multiply those numbers together
 ans = num1 * num2
 # print out the result
