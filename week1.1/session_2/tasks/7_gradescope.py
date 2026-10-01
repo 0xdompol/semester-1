@@ -5,6 +5,10 @@
 # Ask a user to enter two numbers (one per input)
 num1 = int(input("enter num 1: "))
 num2 = int(input("enter num 2: "))
+if num1.isEmpty() == True:
+  exit()
+if num2.isEmpty() == True:
+  exit()
 # multiply those numbers together
 ans = num1 * num2
 # print out the result
