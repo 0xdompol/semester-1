@@ -10,22 +10,18 @@ print(f"Welcome to LeedsBank's savings calculator {name}!")
 # Ask the user to input an amount they want to save every month - this should be an integer.
 # Validate that they have entered an integer.
 
-savings = ""
-while type(savings) == str:
-    try:
-        savings = int(input("Enter an amount to save: "))
-    except:
-        print("Invalid amount")
-        continue
+try:
+    savings = int(input("Enter an integer amount to save: "))
+except:
+    print("Invalid amount")
+    exit()
 
 # Calculate the total amount of money they will have saved by the end of the year (amount per month multiplied by 12).
 # print this out for the user with a suitable message.
-
-annual_savings = savings * 12
-print(f"Your total amount of money saved in one year will be {annual_savings}")
-
+savings = (savings * 12)
+print(f"Your total amount of money saved in one year will be {savings}")
 # Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
 # print this out in the format £X.XX (to two decimal places).
 
-intannual_savings = annual_savings + (annual_savings*0.008)
-print(f"£{intannual_savings}")
+intannual_savings = savings * 1.008
+print(f"£{intannual_savings:.2f}")
