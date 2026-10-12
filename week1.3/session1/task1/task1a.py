@@ -4,7 +4,15 @@ i = 0
 
 while i < 21:
 	print(i)
-	i = i + 1
+	if i == 0:
+		i = i + 1
+		continue
+	if i % 4 == 0:
+		print("Multiple of 4")
+		i = i + 4
+		continue
+	else:
+		i = i + 1
 
 # Modify the loop to print numbers up to and including 20
 
