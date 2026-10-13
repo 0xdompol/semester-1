@@ -2,6 +2,8 @@
 import sys
 from util import read_numbers
 numbers = read_numbers()
+if not numbers:
+    sys.exit("Error: no numbers provided")
 minimum = min(numbers)
 maximum = max(numbers)
 mean = sum(numbers) / len(numbers)
