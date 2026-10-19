@@ -11,7 +11,6 @@ def isBond(intList):
     otherwise. The numbers do not need to be consecutive, but must appear
     in the specified order.
     """
-
     # pass is a Python keyword used as a placeholder for future code,
     # meaning you need to delete pass to write your code.
     # Nothing happens when pass is executed.
