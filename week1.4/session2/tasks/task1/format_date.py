@@ -6,10 +6,15 @@
 # in the format day-month-year with the default separator.
 
 
-def format_data(day, month, year, separator):
+def format_data(day: int, month: int, year: int, separator="-") -> str:
     # complete your code here
-
+    day = str(day)
+    month = str(month)
+    year = str(year)
+    formatted_date = day+separator+month+separator+year
     return formatted_date
 
 
 # Write code to test the function with separators such as "/", ":", "."
+print(format_data(31,8,2008))
+print(format_data(31,10,2008,"/"))
