@@ -6,7 +6,7 @@
     other than any provided template code, was written and developed by
     you independently.
 
-    Name:
+    Name: Dominic Polniaszek
 """
 
 def currency_converter(amount, from_currency, to_currency):
@@ -19,9 +19,13 @@ def currency_converter(amount, from_currency, to_currency):
     }
 
     # your code here
-
-    return None
+    if amount < 0:
+        return 0.0
+    else:
+        from_rates = conversion_rate.get(from_currency)
+        to_rate = from_rates.get(to_currency)
+        converted_amount = round((amount * to_rate), 2)
+    return converted_amount
 
 # Submit only this file currency_converter.py with the completed function.
-
 # Remove any additional code you may have added during development and testing.
