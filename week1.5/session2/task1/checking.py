@@ -10,10 +10,14 @@ class Point:
     A point in 2D space.
     """
 
-    def __init__(self, x, y):
+    def __init__(self, x, y) :
         """
         Creates a Point, given x & y coordinates.
         """
+        if not isinstance(x,(int,float)):
+            raise TypeError("x must be a number")
+        if not isinstance(y,(int,float)):
+            raise TypeError("y must be a number")
         self.x = x
         self.y = y
 
