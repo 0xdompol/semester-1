@@ -60,7 +60,7 @@ class Image:
         self.width = width
         self.height = height
         self.max_value = maximum
-        self.pixels = [value] * (width * height)
+        self.pixels = [value] * (width * height) #creates a large array of pixels that is the image of all elements
 
     def read_pgm(self, filename):
         """
@@ -73,6 +73,7 @@ class Image:
             self._parse_dimensions(imgfile)
             self._parse_max_value(imgfile)
             self._parse_pixels(imgfile)
+            #underscore as prefix hides the methods from help() and IDE's
 
     def _parse_magic_number(self, imgfile):
         line = imgfile.readline().strip()
