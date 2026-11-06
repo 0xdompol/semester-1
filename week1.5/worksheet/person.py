@@ -10,6 +10,9 @@ class Person:
     # Write a constructor here to create and initialize name and
     # birth fields (see README.md for further details)
     def __init__(self,name,birth):
+        """
+        Initializes a Person object with a name and birth date.
+        """
         self.name = name
         self.birth = birth
         if type(self.name) != str:
@@ -39,5 +42,5 @@ class Person:
         Returns True if today is the person's birthday, False if not.
         """
         today = date.today()
-        return True if (self.birth == today) else False
+        return True if (self.birth.month == today.month and self.birth.day == today.day) else False
     # (see README.md for further details)
