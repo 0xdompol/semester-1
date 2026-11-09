@@ -11,16 +11,23 @@ from process_data import process_data
 
 
 def test_empty_list():
+    assert process_data([]) is None
+
     # complete the implementation for
     # testing an empty list
     
     
 def test_one_int_list():
+    assert process_data([5]) == 5
+    assert process_data([-9]) == -9
     # complete the implementation for 
     # testing a list with a single integer
 
 
 def test_multiple_int_list():
+    assert process_data([1, 2, 3]) == 6
+    assert process_data([-2, -5, -9]) == -16
+    assert process_data([3,-5,9]) == 7
     # complete the implementation for
     # testing a list with multiple integers
 
